@@ -681,6 +681,8 @@ def leave_management():
         # Get all active students for the apply form
         students = Student.query.filter_by(is_active=True).order_by(Student.name).all()
         
+        logger.info(f"Leave management loaded: {len(leave_requests)} requests, {len(students)} students")
+        
         return render_template('leave_management.html',
                              leave_requests=leave_requests,
                              students=students,
@@ -693,7 +695,9 @@ def leave_management():
                              date_from=date_from,
                              date_to=date_to)
     except Exception as e:
+        import traceback
         logger.error(f"Error in leave management: {str(e)}")
+        logger.error(traceback.format_exc())
         flash('Error loading leave management', 'error')
         return render_template('leave_management.html', 
                              leave_requests=[], 

@@ -2783,3 +2783,138 @@ FROM leave_requests ORDER BY leave_requests.created_at DESC]
 2026-01-05 22:24:01,548 - __main__ - INFO - Database tables created
 2026-01-05 22:24:01,640 - werkzeug - WARNING -  * Debugger is active!
 2026-01-05 22:24:01,648 - werkzeug - INFO -  * Debugger PIN: 280-807-600
+2026-01-05 22:24:37,115 - __main__ - ERROR - Error in leave management: (sqlite3.OperationalError) no such table: leave_requests
+[SQL: SELECT leave_requests.id AS leave_requests_id, leave_requests.student_id AS leave_requests_student_id, leave_requests.leave_type AS leave_requests_leave_type, leave_requests.start_date AS leave_requests_start_date, leave_requests.end_date AS leave_requests_end_date, leave_requests.reason AS leave_requests_reason, leave_requests.status AS leave_requests_status, leave_requests.reviewed_by AS leave_requests_reviewed_by, leave_requests.reviewed_at AS leave_requests_reviewed_at, leave_requests.review_notes AS leave_requests_review_notes, leave_requests.created_at AS leave_requests_created_at, leave_requests.updated_at AS leave_requests_updated_at 
+FROM leave_requests ORDER BY leave_requests.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-05 22:24:37,213 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "GET /leave HTTP/1.1" 200 -
+2026-01-05 22:24:37,776 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/minified-bundle.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,782 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/performance-optimizations.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,792 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/js/performance-monitor.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,804 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/cross-browser-fixes.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,807 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/js/asset-loader.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,807 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "GET /static/css/fixed-layout.css HTTP/1.1" 200 -
+2026-01-05 22:24:37,811 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,818 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/js/browser-compatibility.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,832 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/js/enhanced-forms.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,838 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/js/enhanced-toast.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,845 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/js/loading-states.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,850 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/js/mobile-interactions.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,855 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/js/accessibility-enhancements.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,855 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/enhanced-design-system.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,865 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/enhanced-utilities.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,871 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/enhanced-navigation.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,873 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/enhanced-attendance.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,883 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/enhanced-forms.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,887 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/enhanced-toast.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,887 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/loading-states.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,897 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/mobile-responsive.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:37,898 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:37] "[36mGET /static/css/accessibility-enhancements.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,758 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/css/enhanced-forms.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,764 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/css/enhanced-toast.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,770 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/css/loading-states.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,773 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/css/mobile-responsive.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,781 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/css/accessibility-enhancements.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,781 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/css/enhanced-forms.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,789 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/css/enhanced-toast.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,799 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/css/loading-states.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,803 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/css/mobile-responsive.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,803 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/css/accessibility-enhancements.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,815 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/js/enhanced-forms.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,815 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/js/enhanced-toast.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,832 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/js/loading-states.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,836 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/js/mobile-interactions.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:39,836 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:39] "[36mGET /static/js/accessibility-enhancements.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:41,606 - __main__ - ERROR - Error in leave management: (sqlite3.OperationalError) no such table: leave_requests
+[SQL: SELECT leave_requests.id AS leave_requests_id, leave_requests.student_id AS leave_requests_student_id, leave_requests.leave_type AS leave_requests_leave_type, leave_requests.start_date AS leave_requests_start_date, leave_requests.end_date AS leave_requests_end_date, leave_requests.reason AS leave_requests_reason, leave_requests.status AS leave_requests_status, leave_requests.reviewed_by AS leave_requests_reviewed_by, leave_requests.reviewed_at AS leave_requests_reviewed_at, leave_requests.review_notes AS leave_requests_review_notes, leave_requests.created_at AS leave_requests_created_at, leave_requests.updated_at AS leave_requests_updated_at 
+FROM leave_requests ORDER BY leave_requests.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-05 22:24:41,631 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:41] "GET /leave HTTP/1.1" 200 -
+2026-01-05 22:24:41,854 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:41] "[36mGET /static/css/minified-bundle.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,005 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/performance-optimizations.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,073 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/cross-browser-fixes.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,090 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,118 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/fixed-layout.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,164 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/js/browser-compatibility.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,181 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/js/performance-monitor.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,203 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/js/asset-loader.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,269 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/js/enhanced-forms.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,286 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/js/enhanced-toast.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,327 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/js/loading-states.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,393 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/js/mobile-interactions.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,427 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/js/accessibility-enhancements.js HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,535 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/enhanced-design-system.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,535 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/enhanced-utilities.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,567 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/enhanced-navigation.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,647 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/enhanced-attendance.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,895 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/enhanced-forms.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,895 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/enhanced-toast.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,953 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/loading-states.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:42,981 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:42] "[36mGET /static/css/mobile-responsive.css HTTP/1.1[0m" 304 -
+2026-01-05 22:24:43,010 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:24:43] "[36mGET /static/css/accessibility-enhancements.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,483 - __main__ - ERROR - Error in leave management: (sqlite3.OperationalError) no such table: leave_requests
+[SQL: SELECT leave_requests.id AS leave_requests_id, leave_requests.student_id AS leave_requests_student_id, leave_requests.leave_type AS leave_requests_leave_type, leave_requests.start_date AS leave_requests_start_date, leave_requests.end_date AS leave_requests_end_date, leave_requests.reason AS leave_requests_reason, leave_requests.status AS leave_requests_status, leave_requests.reviewed_by AS leave_requests_reviewed_by, leave_requests.reviewed_at AS leave_requests_reviewed_at, leave_requests.review_notes AS leave_requests_review_notes, leave_requests.created_at AS leave_requests_created_at, leave_requests.updated_at AS leave_requests_updated_at 
+FROM leave_requests ORDER BY leave_requests.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-01-05 22:25:21,492 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "GET /leave HTTP/1.1" 200 -
+2026-01-05 22:25:21,576 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/minified-bundle.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,576 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/performance-optimizations.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,587 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/cross-browser-fixes.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,591 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,611 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/js/browser-compatibility.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,611 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/fixed-layout.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,618 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/js/performance-monitor.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,621 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/js/asset-loader.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,643 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/js/enhanced-forms.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,651 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/js/enhanced-toast.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,658 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/js/loading-states.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,665 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/js/mobile-interactions.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,673 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/js/accessibility-enhancements.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,678 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/enhanced-design-system.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,681 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/enhanced-utilities.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,684 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/enhanced-navigation.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,691 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/enhanced-attendance.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,691 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/enhanced-forms.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,706 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/enhanced-toast.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,708 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/loading-states.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,708 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/mobile-responsive.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,708 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/accessibility-enhancements.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,996 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/enhanced-navigation.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:21,996 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:21] "[36mGET /static/css/enhanced-attendance.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:22,005 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:22] "[36mGET /static/css/enhanced-forms.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:22,010 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:22] "[36mGET /static/css/enhanced-toast.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:22,010 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:22] "[36mGET /static/css/loading-states.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:22,021 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:22] "[36mGET /static/css/mobile-responsive.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:22,028 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:22] "[36mGET /static/css/accessibility-enhancements.css HTTP/1.1[0m" 304 -
+2026-01-05 22:25:22,075 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:22] "[36mGET /static/js/enhanced-forms.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:22,090 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:22] "[36mGET /static/js/enhanced-toast.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:22,095 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:22] "[36mGET /static/js/loading-states.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:22,100 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:22] "[36mGET /static/js/mobile-interactions.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:22,110 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:22] "[36mGET /static/js/accessibility-enhancements.js HTTP/1.1[0m" 304 -
+2026-01-05 22:25:25,595 - face_recognition.face_encoder - INFO - Face encoder initialized with OpenCV
+2026-01-05 22:25:25,624 - face_recognition.face_detector - INFO - Face detector initialized with OpenCV
+2026-01-05 22:25:25,656 - __main__ - INFO - Database tables created
+2026-01-05 22:25:25,744 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.36.2.192:5000
+2026-01-05 22:25:25,744 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-05 22:25:25,763 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-01-05 22:25:27,047 - face_recognition.face_encoder - INFO - Face encoder initialized with OpenCV
+2026-01-05 22:25:27,080 - face_recognition.face_detector - INFO - Face detector initialized with OpenCV
+2026-01-05 22:25:27,088 - __main__ - INFO - Database tables created
+2026-01-05 22:25:27,148 - werkzeug - WARNING -  * Debugger is active!
+2026-01-05 22:25:27,159 - werkzeug - INFO -  * Debugger PIN: 280-807-600
+2026-01-05 22:25:35,174 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:25:35] "GET /leave HTTP/1.1" 200 -
+2026-01-05 22:25:36,321 - simple_camera - INFO - Camera stopped
+2026-01-05 22:25:53,191 - face_recognition.face_encoder - INFO - Face encoder initialized with OpenCV
+2026-01-05 22:25:53,224 - face_recognition.face_detector - INFO - Face detector initialized with OpenCV
+2026-01-05 22:25:53,228 - app - INFO - Database tables created
+2026-01-05 22:26:01,594 - simple_camera - INFO - Camera stopped
+2026-01-05 22:26:01,594 - face_recognition.face_detector - INFO - Face detection stopped
+2026-01-05 22:26:07,735 - face_recognition.face_encoder - INFO - Face encoder initialized with OpenCV
+2026-01-05 22:26:07,773 - face_recognition.face_detector - INFO - Face detector initialized with OpenCV
+2026-01-05 22:26:07,788 - app - INFO - Database tables created
+2026-01-05 22:26:42,360 - face_recognition.face_encoder - INFO - Face encoder initialized with OpenCV
+2026-01-05 22:26:42,392 - face_recognition.face_detector - INFO - Face detector initialized with OpenCV
+2026-01-05 22:26:42,398 - app - INFO - Database tables created
